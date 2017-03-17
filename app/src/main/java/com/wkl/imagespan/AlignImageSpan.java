@@ -29,14 +29,14 @@ public class AlignImageSpan extends ImageSpan {
 
     @IntDef({ALIGN_BOTTOM, ALIGN_BASELINE, ALIGN_TOP, ALIGN_CENTER})
     @Retention(RetentionPolicy.SOURCE)
-    public @interface Aligment {
+    public @interface Alignment {
     }
 
     public AlignImageSpan(Drawable d) {
         this(d, ALIGN_CENTER);
     }
 
-    public AlignImageSpan(Drawable d, @Aligment int verticalAlignment) {
+    public AlignImageSpan(Drawable d, @Alignment int verticalAlignment) {
         super(d, verticalAlignment);
     }
 
